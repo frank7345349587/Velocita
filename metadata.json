@@ -1,0 +1,9 @@
+{
+  "name": "Velocita - Over-Speed Warning & OpenStreetMap Speed Alert",
+  "description": "Real-time automotive over-speed alarm system powered by OpenStreetMap speed limits with fully customizable audio rings, multi-tier chimes, voice alerts, and GPS HUD.",
+  "requestFramePermissions": [
+    "geolocation",
+    "notifications"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

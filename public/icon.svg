@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="#1e293b" stroke-width="4"/>
+
+  <!-- Outer Speed Ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#1e293b" stroke-width="28" stroke-dasharray="850" stroke-dashoffset="200" stroke-linecap="round"/>
+  
+  <!-- Active Crimson Alert Arc -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="url(#redGrad)" stroke-width="28" stroke-dasharray="850" stroke-dashoffset="480" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- Center Shield -->
+  <path d="M 256 120 L 350 160 C 350 260 256 340 256 360 C 256 340 162 260 162 160 Z" fill="#dc2626" opacity="0.9"/>
+  <path d="M 256 140 L 332 174 C 332 250 256 318 256 335 C 256 318 180 250 180 174 Z" fill="#0f172a"/>
+
+  <!-- Speedometer Needle -->
+  <line x1="256" y1="256" x2="330" y2="175" stroke="#f59e0b" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="256" cy="256" r="22" fill="#f59e0b"/>
+  <circle cx="256" cy="256" r="10" fill="#ffffff"/>
+
+  <!-- Speed limit sign symbol inside shield -->
+  <rect x="226" y="196" width="60" height="76" rx="8" fill="#ffffff" stroke="#0f172a" stroke-width="4"/>
+  <text x="256" y="214" font-family="system-ui, sans-serif" font-size="10" font-weight="900" text-anchor="middle" fill="#0f172a">LIMIT</text>
+  <text x="256" y="254" font-family="system-ui, monospace" font-size="32" font-weight="900" text-anchor="middle" fill="#dc2626">55</text>
+</svg>

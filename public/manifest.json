@@ -1,0 +1,33 @@
+{
+  "id": "/",
+  "name": "Velocita - Over-Speed Warning & OpenStreetMap Speed Alert",
+  "short_name": "Velocita",
+  "description": "Real-time automotive over-speed alarm system powered by OpenStreetMap speed limits with fully customizable audio rings, multi-tier chimes, voice alerts, and GPS HUD.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#dc2626",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["navigation", "utilities", "travel"]
+}
